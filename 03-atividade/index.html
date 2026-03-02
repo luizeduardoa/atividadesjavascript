@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Simples</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ 
+<header>
+    <h1>🎂Confeitaria</h1>
+</header>
+ 
+<div class="container">
+  
+    <div class="produtos">
+        <div class="card">
+            <img src="img/157366-500-auto.png" alt="Bolo Red Velvet">
+            <h3>Bolo Red Velvet</h3>
+            <p>R$ 50,00</p>
+            <button onclick="adicionarCarrinho('Bolo Red Velvet ',50)">Comprar</button>
+        </div>
+ 
+        <div class="card">
+            <img src="img/157370-500-auto.png" alt="Merengão">
+            <h3>Merengão</h3>
+            <p>R$ 80,00</p>
+            <button onclick="adicionarCarrinho('Merengão',80)">Comprar</button>
+        </div>
+ 
+        <div class="card">
+            <img src="img/157385-500-auto.png" alt="Bolo Trufado">
+            <h3>Bolo Trufado</h3>
+            <p>R$ 120,00</p>
+            <button onclick="adicionarCarrinho('Bolo Trufado',120)">Comprar</button>
+        </div>
+    </div>
+ 
+    <div class="carrinho">
+    <h2>🛒 Carrinho</h2>
+    <ul id="listaCarrinho"></ul>
+ 
+    <p>Subtotal: R$ <span id="subtotal">0</span>,00</p>
+    <p>Frete: R$ <span id="frete">0</span>,00</p>
+    <h3>Total: R$ <span id="total">0</span>,00</h3>
+ 
+    <p style="color:green;">
+        Compras acima de R$ 200 têm FRETE GRÁTIS 🚚
+    </p>
+    <p style="color: green;"> Cliente VIP Frete Gratis!</p>
+</div>
+ 
+<script src="./js/script.js"></script>
+</body>
+</html>
